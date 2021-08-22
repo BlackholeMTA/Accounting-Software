@@ -17,8 +17,6 @@ require CONFIGPATH . DIRECTORY_SEPARATOR . 'autoload.php';
 require LIBPATH . DIRECTORY_SEPARATOR . 'database.php';
 require LIBPATH . DIRECTORY_SEPARATOR . 'validation.php';
 require LIBPATH . DIRECTORY_SEPARATOR . 'email.php';
-require LIBPATH . DIRECTORY_SEPARATOR . 'layout.php';
-require LIBPATH . DIRECTORY_SEPARATOR . 'cart.php';
 // Include core base
 
 require COREPATH . DIRECTORY_SEPARATOR . 'base.php';

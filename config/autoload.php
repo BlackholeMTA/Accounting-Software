@@ -32,7 +32,7 @@ $autoload['lib'] = array();
  */
 
 
-$autoload['helper'] = array('data','url');// users để kiểm tra tài khoản
+$autoload['helper'] = array('data','url','users');// users để kiểm tra tài khoản
 
 
 

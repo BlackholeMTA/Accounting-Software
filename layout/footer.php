@@ -1,139 +1,20 @@
-<?php 
-    $query="SELECT * FROM `tbl_list_cats`";
-    $list_cat=db_fetch_array($query);
-?>
+<script type="text/javascript" src="assets/js/jquery/jquery.min.js "></script>
+    <script type="text/javascript" src="assets/js/jquery-ui/jquery-ui.min.js "></script>
+    <script type="text/javascript" src="assets/js/popper.js/popper.min.js"></script>
+    <script type="text/javascript" src="assets/js/bootstrap/js/bootstrap.min.js "></script>
+    <!-- waves js -->
+    <script src="assets/pages/waves/js/waves.min.js"></script>
+    <!-- jquery slimscroll js -->
+    <script type="text/javascript" src="assets/js/jquery-slimscroll/jquery.slimscroll.js"></script>
 
-<div id="footer-wp">
-    <div id="foot-body">
-        <div class="wp-inner clearfix">
-            <div class="block" id="info-company">
-                <h3 class="title">ISMART</h3>
-                <p class="desc">ISMART luôn cung cấp luôn là sản phẩm chính hãng có thông tin rõ ràng, chính sách ưu đãi cực lớn cho khách hàng có thẻ thành viên.</p>
-                <div id="payment">
-                    <div class="thumb">
-                        <img src="public/images/img-foot.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="block menu-ft" id="info-shop">
-                <h3 class="title">Thông tin cửa hàng</h3>
-                <ul class="list-item">
-                    <li>
-                        <p>106 - Trần Bình - Cầu Giấy - Hà Nội</p>
-                    </li>
-                    <li>
-                        <p>0987.654.321 - 0989.989.989</p>
-                    </li>
-                    <li>
-                        <p>vshop@gmail.com</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="block menu-ft policy" id="info-shop">
-                <h3 class="title">Chính sách mua hàng</h3>
-                <ul class="list-item">
-                    <li>
-                        <a href="" title="">Quy định - chính sách</a>
-                    </li>
-                    <li>
-                        <a href="" title="">Chính sách bảo hành - đổi trả</a>
-                    </li>
-                    <li>
-                        <a href="" title="">Chính sách hội viện</a>
-                    </li>
-                    <li>
-                        <a href="" title="">Giao hàng - lắp đặt</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="block" id="newfeed">
-                <h3 class="title">Bảng tin</h3>
-                <p class="desc">Đăng ký với chung tôi để nhận được thông tin ưu đãi sớm nhất</p>
-                <div id="form-reg">
-                    <form method="POST" action="">
-                        <input type="email" name="email_footer" id="email_footer" placeholder="Nhập email tại đây">
-                        <button type="submit" id="sm-reg">Đăng ký</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="foot-bot">
-        <div class="wp-inner">
-            <p id="copyright">© Bản quyền thuộc về unitop.vn | Php Master</p>
-        </div>
-    </div>
-</div>
-</div>
-<div id="menu-respon">
-    <a href="?mod=home" title="" class="logo">VSHOP</a>
-    <div id="menu-respon-wp">
-        <ul class="" id="main-menu-respon">
-            <li>
-                <a href="" title>Trang chủ</a>
-            </li>
-            <?php
-                foreach ($list_cat as $item) {
-                    # code...
-                    ?>
-                    <li>
-                <a href="?page=category_product" title><?php echo $item['cat_name'] ?></a>
-                    </li>
-                    
-                    <?php 
-                }
-            ?>
-            <li>
-                <a href="?page=category_product" title>Điện thoại</a>
-                <ul class="sub-menu">
-                    <li>
-                        <a href="?page=category_product" title="">Iphone</a>
-                    </li>
-                    <li>
-                        <a href="?page=category_product" title="">Samsung</a>
-                        <ul class="sub-menu">
-                            <li>
-                                <a href="?page=category_product" title="">Iphone X</a>
-                            </li>
-                            <li>
-                                <a href="?page=category_product" title="">Iphone 8</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="?page=category_product" title="">Nokia</a>
-                    </li>
-                </ul>
-            </li>
-            <li>
-                <a href="?page=category_product" title>Máy tính bảng</a>
-            </li>
-            <li>
-                <a href="?page=category_product" title>Laptop</a>
-            </li>
-            <li>
-                <a href="?page=category_product" title>Đồ dùng sinh hoạt</a>
-            </li>
-            <li>
-                <a href="?page=blog" title>Blog</a>
-            </li>
-            <li>
-                <a href="#" title>Liên hệ</a>
-            </li>
-        </ul>
-    </div>
-</div>
-<div id="btn-top"><img src="public/images/icon-to-top.png" alt=""/></div>
-<div id="fb-root"></div>
-<script>(function (d, s, id) {
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id))
-            return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v2.8&appId=849340975164592";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));
-</script>
+    <!-- slimscroll js -->
+    <script src="assets/js/jquery.mCustomScrollbar.concat.min.js "></script>
+
+    <!-- menu js -->
+    <script src="assets/js/pcoded.min.js"></script>
+    <script src="assets/js/vertical/vertical-layout.min.js "></script>
+
+    <script type="text/javascript" src="assets/js/script.js "></script>
 </body>
+
 </html>

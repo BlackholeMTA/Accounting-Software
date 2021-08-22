@@ -20,7 +20,7 @@ function get_module() {
 //get Action name
 function get_action() {
     global $config;
-    $action = isset($_GET['act']) ? $_GET['act'] : $config['default_action'];
+    $action = isset($_GET['action']) ? $_GET['action'] : $config['default_action'];
     return $action;
 }
 

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -10,7 +10,7 @@
         <link href="public/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
         <link  rel="stylesheet" type="text/css" href="public/style.css"/>
         <link href="public/responsive.css" rel="stylesheet" type="text/css"/>
-        <!-- <script src="public/js/jquery-3.4.1.min.js" type="text/javascript"></script> -->
+      
         <script src="public/js/jquery-2.2.4.min.js" type="text/javascript"></script>
         <script src="public/js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
         <script src="public/js/main.js" type="text/javascript"></script>
@@ -39,7 +39,7 @@
 			<input id="email" type="email" name="email" value="<?php echo set_value('email') ?>" placeholder="Email">
 				<?php echo form_error('email')?>
 				
-                <!-- <input class="remember_me" value="1" type="checkbox" name="remember_me" id="remember_me" style="width: auto;display: unset; text-align: left;"><label class="remember_me" for="remember_me">Ghi nhớ đăng nhập</label> -->
+             
 			<input id="button" type="submit" name="btn_reset" value="Xác nhận">
 			</form>
 			<a href="<?php echo base_url("?mod=user&action=reg") ?>">Đăng ký</a><span> | </span><a href="<?php echo base_url("?mod=user&action=login") ?>">Đăng nhập</a>
@@ -50,4 +50,4 @@
 	</div>
 	
 </body>
-</html>
+</html> -->

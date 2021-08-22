@@ -1,11 +1,10 @@
 <?php
-	function check_login($username,$password){
-		 $check_user=db_num_rows("SELECT * FROM `tbl_users` WHERE `username`='{$username}' AND `password`='{$password}'");
-		if($check_user)
-		return true;
-		return false;
-		
-		
+	function check_login($email,$password){
+		$check_user=db_num_rows("SELECT * FROM `users` WHERE `user_email`='{$email}' AND `user_password`='{$password}' AND `activate` =  '1'" );
+	   if($check_user)
+	   return true;
+	   return false;
+	
 	} 
 	// Kiểm tra login hay chưa
 	function is_login()

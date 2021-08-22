@@ -1,150 +1,215 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>ISMART STORE</title>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="public/css/bootstrap/bootstrap-theme.min.css" rel="stylesheet" type="text/css"/>
-        <link href="public/css/bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-        <link href="public/reset.css" rel="stylesheet" type="text/css"/>
-        <link href="public/css/carousel/owl.carousel.css" rel="stylesheet" type="text/css"/>
-        <link href="public/css/carousel/owl.theme.css" rel="stylesheet" type="text/css"/>
-        <link href="public/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-        <link href="public/style.css" rel="stylesheet" type="text/css"/>
-        <link href="public/responsive.css" rel="stylesheet" type="text/css"/>
+<html lang="en">
 
-        <script src="public/js/jquery-2.2.4.min.js" type="text/javascript"></script>
-        <script src="public/js/elevatezoom-master/jquery.elevatezoom.js" type="text/javascript"></script>
-        <script src="public/js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
-        <script src="public/js/carousel/owl.carousel.js" type="text/javascript"></script>
-        <script src="public/js/main.js" type="text/javascript"></script>
-        <script src="public/js/ajax.js" type="text/javascript"></script>
-    </head>
-    <body>
-        <div id="site">
-            <div id="container">
-                <div id="header-wp">
-                    <div id="head-top" class="clearfix">
-                        <div class="wp-inner">
-                            <a href="" title="" id="payment-link" class="fl-left">Hình thức thanh toán</a>
-                            <div id="main-menu-wp" class="fl-right">
-                                <ul id="main-menu" class="clearfix">
-                                    <li>
-                                        <a href="?mod=home" title="">Trang chủ</a>
-                                    </li>
-                                    <li>
-                                        <a href="?mod=page&act=index&id=1" title="">Sản phẩm</a>
-                                    </li>
-                                    <li>
-                                        <a href="?mod=post&act=index" title="">Blog</a>
-                                    </li>
-                                    <li>
-                                        <a href="?page=detail_blog" title="">Giới thiệu</a>
-                                    </li>
-                                    <li>
-                                        <a href="?page=detail_blog" title="">Liên hệ</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
+<head>
+    <title>Phần mềm kế toán</title>
+    <!-- HTML5 Shim and Respond.js IE10 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 10]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <meta name="keywords" content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
+    <meta name="author" content="Codedthemes" />
+    <!-- Favicon icon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <!-- Google font-->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
+    <!-- waves.css -->
+    <link rel="stylesheet" href="assets/pages/waves/css/waves.min.css" type="text/css" media="all">
+    <!-- Required Fremwork -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap/css/bootstrap.min.css">
+    <!-- waves.css -->
+    <link rel="stylesheet" href="assets/pages/waves/css/waves.min.css" type="text/css" media="all">
+    <!-- themify icon -->
+    <link rel="stylesheet" type="text/css" href="assets/icon/themify-icons/themify-icons.css">
+    <!-- font-awesome-n -->
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome-n.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.min.css">
+    <!-- scrollbar.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
+    <!-- Style.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- Pre-loader start -->
+    <div class="theme-loader">
+        <div class="loader-track">
+            <div class="preloader-wrapper">
+                <div class="spinner-layer spinner-blue">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
                     </div>
-                    <div id="head-body" class="clearfix">
-                        <div class="wp-inner">
-                            <a href="?page=home" title="" id="logo" class="fl-left"><img src="public/images/logo.png"/></a>
-                            <div id="search-wp" class="fl-left">
-                                <form method="POST" action="">
-                                    <input type="text" name="s" id="s" placeholder="Nhập từ khóa tìm kiếm tại đây!">
-                                    <button type="submit" id="sm-s">Tìm kiếm</button>
-                                </form>
-                            </div>
-                            <div id="action-wp" class="fl-right">
-                                <div id="advisory-wp" class="fl-left">
-                                    <span class="title">Tư vấn</span>
-                                    <span class="phone">0987.654.321</span>
-                                </div>
-                                <div id="btn-respon" class="fl-right"><i class="fa fa-bars" aria-hidden="true"></i></div>
-                                <a href="?page=cart" title="giỏ hàng" id="cart-respon-wp" class="fl-right">
-                                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                    <span id="num">2</span>
-                                </a>
-                                <div id="cart-wp" class="fl-right">
-                                    <div id="btn-cart">
-                                        <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                        <span id="num"><?php 
-                                $num_order=get_num_order_cart();
-                                    if($num_order>0)
-                                    {
-                                        ?>
-                                            <?php echo $num_order?>
-                                        <?php
-                                    }
-                                ?></span>
-                                    </div>
-                                    <div id="dropdown">
-                                        <p class="desc">Có <span><?php 
-                                $num_order=get_num_order_cart();
-                                    if($num_order>0)
-                                    {
-                                        echo $num_order;
-                                    }
-                                    else{
-                                        echo "0";
-                                    }
-                                ?> sản phẩm</span> trong giỏ hàng</p>
-                                    
-                                        <ul class="list-cart">
-                                            <?php 
-                                                $list_pro_buy=get_list_buy_cart();
-                                                foreach ($list_pro_buy as $item) {
-                                                    # code...
-                                                    ?>
-                                                    <li class="clearfix">
-                                                <a href="" title="" class="thumb fl-left">
-                                                    <img src="<?php  echo $item['image_link'] ?>" alt="">
-                                                </a>
-                                                <div class="info fl-right">
-                                                    <a href="" title="" class="product-name"><?php echo $item['name'] ?></a>
-                                                    <p class="price"><?php echo currentcy_format($item['price']) ?></p>
-                                                    <p class="qty" id="qty-<?php echo $item['id'] ?>">Số lượng: <span><?php 
-                                                            echo $item['qty'];
-                                                    ?></span></p>
-                                                </div>
-                                                </li>
-                                                    <?php
-                                                }
-                                            ?>
-                                            <!-- <li class="clearfix">
-                                                <a href="" title="" class="thumb fl-left">
-                                                    <img src="public/images/img-pro-11.png" alt="">
-                                                </a>
-                                                <div class="info fl-right">
-                                                    <a href="" title="" class="product-name">Sony Express X6</a>
-                                                    <p class="price">6.250.000đ</p>
-                                                    <p class="qty">Số lượng: <span>1</span></p>
-                                                </div>
-                                            </li>
-                                            <li class="clearfix">
-                                                <a href="" title="" class="thumb fl-left">
-                                                    <img src="public/images/img-pro-23.png" alt="">
-                                                </a>
-                                                <div class="info fl-right">
-                                                    <a href="" title="" class="product-name">Laptop Lenovo 10</a>
-                                                    <p class="price">16.250.000đ</p>
-                                                    <p class="qty">Số lượng: <span>1</span></p>
-                                                </div>
-                                            </li> -->
-                                        </ul>
-                                        <div class="total-price clearfix">
-                                            <p class="title fl-left">Tổng:</p>
-                                            <p class="price fl-right" id="js-price"><?php echo currentcy_format( $total=get_total_cart()) ?></p>
-                                        </div>
-                                        <dic class="action-cart clearfix">
-                                            <a href="?mod=cart&act=show" title="Giỏ hàng" class="view-cart fl-left">Giỏ hàng</a>
-                                            <a href="?mod=cart&act=checkout" title="Thanh toán" class="checkout fl-right">Thanh toán</a>
-                                        </dic>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
                     </div>
                 </div>
+                <div class="spinner-layer spinner-red">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+
+                <div class="spinner-layer spinner-yellow">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+
+                <div class="spinner-layer spinner-green">
+                    <div class="circle-clipper left">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                        <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Pre-loader end -->
+    <div id="pcoded" class="pcoded">
+        <div class="pcoded-overlay-box"></div>
+        <div class="pcoded-container navbar-wrapper">
+            <nav class="navbar header-navbar pcoded-header">
+                <div class="navbar-wrapper">
+                    <div class="navbar-logo">
+                        <a class="mobile-menu waves-effect waves-light" id="mobile-collapse" href="#!">
+                            <i class="ti-menu"></i>
+                        </a>
+                        <div class="mobile-search waves-effect waves-light">
+                            <div class="header-search">
+                                <div class="main-search morphsearch-search">
+                                    <div class="input-group">
+                                        <span class="input-group-prepend search-close"><i class="ti-close input-group-text"></i></span>
+                                        <input type="text" class="form-control" placeholder="Enter Keyword">
+                                        <span class="input-group-append search-btn"><i class="ti-search input-group-text"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="index.html">
+                            <img class="img-fluid" src="assets/images/logo.png" alt="Theme-Logo" />
+                        </a>
+                        <a class="mobile-options waves-effect waves-light">
+                            <i class="ti-more"></i>
+                        </a>
+                    </div>
+                    <div class="navbar-container container-fluid">
+                        <ul class="nav-left">
+                            <li>
+                                <div class="sidebar_toggle"><a href="javascript:void(0)"><i class="ti-menu"></i></a></div>
+                            </li>
+                            <li>
+                                <a href="#!" onclick="javascript:toggleFullScreen()" class="waves-effect waves-light">
+                                    <i class="ti-fullscreen"></i>
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="nav-right">
+                            <li class="header-notification">
+                                <a href="#!" class="waves-effect waves-light">
+                                    <i class="ti-bell"></i>
+                                    <span class="badge bg-c-red"></span>
+                                </a>
+                                <ul class="show-notification">
+                                    <li>
+                                        <h6>Notifications</h6>
+                                        <label class="label label-danger">New</label>
+                                    </li>
+                                    <li class="waves-effect waves-light">
+                                        <div class="media">
+                                            <img class="d-flex align-self-center img-radius" src="assets/images/avatar-2.jpg" alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="notification-user">John Doe</h5>
+                                                <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                <span class="notification-time">30 minutes ago</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="waves-effect waves-light">
+                                        <div class="media">
+                                            <img class="d-flex align-self-center img-radius" src="assets/images/avatar-4.jpg" alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="notification-user">Joseph William</h5>
+                                                <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                <span class="notification-time">30 minutes ago</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="waves-effect waves-light">
+                                        <div class="media">
+                                            <img class="d-flex align-self-center img-radius" src="assets/images/avatar-3.jpg" alt="Generic placeholder image">
+                                            <div class="media-body">
+                                                <h5 class="notification-user">Sara Soudein</h5>
+                                                <p class="notification-msg">Lorem ipsum dolor sit amet, consectetuer elit.</p>
+                                                <span class="notification-time">30 minutes ago</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="user-profile header-notification">
+                                <a href="#!" class="waves-effect waves-light">
+                                    <img src="assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
+                                    <span>John Doe</span>
+                                    <i class="ti-angle-down"></i>
+                                </a>
+                                <ul class="show-notification profile-notification">
+                                    <li class="waves-effect waves-light">
+                                        <a href="#!">
+                                            <i class="ti-settings"></i> Settings
+                                        </a>
+                                    </li>
+                                    <li class="waves-effect waves-light">
+                                        <a href="user-profile.html">
+                                            <i class="ti-user"></i> Profile
+                                        </a>
+                                    </li>
+                                    <li class="waves-effect waves-light">
+                                        <a href="email-inbox.html">
+                                            <i class="ti-email"></i> My Messages
+                                        </a>
+                                    </li>
+                                    <li class="waves-effect waves-light">
+                                        <a href="auth-lock-screen.html">
+                                            <i class="ti-lock"></i> Lock Screen
+                                        </a>
+                                    </li>
+                                    <li class="waves-effect waves-light">
+                                        <a href="auth-normal-sign-in.html">
+                                            <i class="ti-layout-sidebar-left"></i> Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            

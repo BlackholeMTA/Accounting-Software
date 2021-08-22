@@ -1,11 +1,9 @@
 <?php
-if(isset($_SESSION['cart']))
-{
-    unset($_SESSION['cart']);
-}
+
 
 session_start();
 ob_start();
+date_default_timezone_set("Asia/Ho_Chi_Minh"); // thêm thời gian
 /*
  * ---------------------------------------------------------
  * BASE URL
@@ -17,7 +15,7 @@ ob_start();
  * 
  */
 
-$config['base_url'] = "http://localhost/unitop/PHP/lesson/section_29/ismart.com";
+$config['base_url'] = "http://localhost/003_Co_Hien/ke_toan/Accounting-Software";
 
 
 $config['default_module'] = 'home';

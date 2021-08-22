@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -10,7 +10,7 @@
         <link href="public/css/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
         <link  rel="stylesheet" type="text/css" href="public/style.css"/>
         <link href="public/responsive.css" rel="stylesheet" type="text/css"/>
-        <!-- <script src="public/js/jquery-3.4.1.min.js" type="text/javascript"></script> -->
+        
         <script src="public/js/jquery-2.2.4.min.js" type="text/javascript"></script>
         <script src="public/js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
         <script src="public/js/main.js" type="text/javascript"></script>
@@ -48,4 +48,4 @@
 	</div>
 	
 </body>
-</html>
+</html> -->

@@ -1,740 +1,383 @@
 <?php 
     get_header();
 ?>
-
-<div id="main-content-wp" class="home-page clearfix">
-    <div class="wp-inner">
-        <div class="main-content fl-right">
-            <div class="section" id="slider-wp">
-                <div class="section-detail">
-                    <?php 
-                        foreach ($list_image_banner as $item) {
-                            # code...
-                            ?>
-                            <div class="item">
-                        <img src="<?php echo $item['image_link']?>" alt="">
+<?php
+    get_sidebar();
+?>
+ <div class="pcoded-content">
+                        <!-- Page-header start -->
+                        <div class="page-header">
+                            <div class="page-block">
+                                <div class="row align-items-center">
+                                    <div class="col-md-8">
+                                        <div class="page-header-title">
+                                            <h5 class="m-b-10">Dashboard</h5>
+                                            <p class="m-b-0">Welcome to Material Able</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <ul class="breadcrumb">
+                                            <li class="breadcrumb-item">
+                                                <a href="index.html"> <i class="fa fa-home"></i> </a>
+                                            </li>
+                                            <li class="breadcrumb-item"><a href="#!">Dashboard</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                            <?php
-                        
-                        }
+                        <!-- Page-header end -->
+                        <div class="pcoded-inner-content">
+                            <!-- Main-body start -->
+                            <div class="main-body">
+                                <div class="page-wrapper">
+                                    <!-- Page-body start -->
+                                    <div class="page-body">
+                                        <div class="row">
+                                            <!-- Material statustic card start -->
+                                            <div class="col-xl-4 col-md-12">
+                                                <div class="card mat-stat-card">
+                                                    <div class="card-block">
+                                                        <div class="row align-items-center b-b-default">
+                                                            <div class="col-sm-6 b-r-default p-b-20 p-t-20">
+                                                                <div class="row align-items-center text-center">
+                                                                    <div class="col-4 p-r-0">
+                                                                        <i class="far fa-user text-c-purple f-24"></i>
+                                                                    </div>
+                                                                    <div class="col-8 p-l-0">
+                                                                        <h5>10K</h5>
+                                                                        <p class="text-muted m-b-0">Visitors</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6 p-b-20 p-t-20">
+                                                                <div class="row align-items-center text-center">
+                                                                    <div class="col-4 p-r-0">
+                                                                        <i class="fas fa-volume-down text-c-green f-24"></i>
+                                                                    </div>
+                                                                    <div class="col-8 p-l-0">
+                                                                        <h5>100%</h5>
+                                                                        <p class="text-muted m-b-0">Volume</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-center">
+                                                            <div class="col-sm-6 p-b-20 p-t-20 b-r-default">
+                                                                <div class="row align-items-center text-center">
+                                                                    <div class="col-4 p-r-0">
+                                                                        <i class="far fa-file-alt text-c-red f-24"></i>
+                                                                    </div>
+                                                                    <div class="col-8 p-l-0">
+                                                                        <h5>2000+</h5>
+                                                                        <p class="text-muted m-b-0">Files</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6 p-b-20 p-t-20">
+                                                                <div class="row align-items-center text-center">
+                                                                    <div class="col-4 p-r-0">
+                                                                        <i class="far fa-envelope-open text-c-blue f-24"></i>
+                                                                    </div>
+                                                                    <div class="col-8 p-l-0">
+                                                                        <h5>120</h5>
+                                                                        <p class="text-muted m-b-0">Mails</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-md-12">
+                                                <div class="card mat-stat-card">
+                                                    <div class="card-block">
+                                                        <div class="row align-items-center b-b-default">
+                                                            <div class="col-sm-6 b-r-default p-b-20 p-t-20">
+                                                                <div class="row align-items-center text-center">
+                                                                    <div class="col-4 p-r-0">
+                                                                        <i class="fas fa-share-alt text-c-purple f-24"></i>
+                                                                    </div>
+                                                                    <div class="col-8 p-l-0">
+                                                                        <h5>1000</h5>
+                                                                        <p class="text-muted m-b-0">Share</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6 p-b-20 p-t-20">
+                                                                <div class="row align-items-center text-center">
+                                                                    <div class="col-4 p-r-0">
+                                                                        <i class="fas fa-sitemap text-c-green f-24"></i>
+                                                                    </div>
+                                                                    <div class="col-8 p-l-0">
+                                                                        <h5>600</h5>
+                                                                        <p class="text-muted m-b-0">Network</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="row align-items-center">
+                                                            <div class="col-sm-6 p-b-20 p-t-20 b-r-default">
+                                                                <div class="row align-items-center text-center">
+                                                                    <div class="col-4 p-r-0">
+                                                                        <i class="fas fa-signal text-c-red f-24"></i>
+                                                                    </div>
+                                                                    <div class="col-8 p-l-0">
+                                                                        <h5>350</h5>
+                                                                        <p class="text-muted m-b-0">Returns</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-6 p-b-20 p-t-20">
+                                                                <div class="row align-items-center text-center">
+                                                                    <div class="col-4 p-r-0">
+                                                                        <i class="fas fa-wifi text-c-blue f-24"></i>
+                                                                    </div>
+                                                                    <div class="col-8 p-l-0">
+                                                                        <h5>100%</h5>
+                                                                        <p class="text-muted m-b-0">Connections</p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-4 col-md-12">
+                                                <div class="card mat-clr-stat-card text-white green ">
+                                                    <div class="card-block">
+                                                        <div class="row">
+                                                            <div class="col-3 text-center bg-c-green">
+                                                                <i class="fas fa-star mat-icon f-24"></i>
+                                                            </div>
+                                                            <div class="col-9 cst-cont">
+                                                                <h5>4000+</h5>
+                                                                <p class="m-b-0">Ratings Received</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card mat-clr-stat-card text-white blue">
+                                                    <div class="card-block">
+                                                        <div class="row">
+                                                            <div class="col-3 text-center bg-c-blue">
+                                                                <i class="fas fa-trophy mat-icon f-24"></i>
+                                                            </div>
+                                                            <div class="col-9 cst-cont">
+                                                                <h5>17</h5>
+                                                                <p class="m-b-0">Achievements</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Material statustic card end -->
+                                            <!-- order-visitor start -->
 
-                    ?>
-                    <!-- <div class="item">
-                        <img src="public/images/slider-01.png" alt="">
+
+                                            <!-- order-visitor end -->
+
+                                            <!--  sale analytics start -->
+                                            <div class="col-xl-6 col-md-12">
+                                                <div class="card table-card">
+                                                    <div class="card-header">
+                                                        <h5>Member’s performance</h5>
+                                                        <div class="card-header-right">
+                                                            <ul class="list-unstyled card-option">
+                                                                <li><i class="fa fa fa-wrench open-card-option"></i></li>
+                                                                <li><i class="fa fa-window-maximize full-card"></i></li>
+                                                                <li><i class="fa fa-minus minimize-card"></i></li>
+                                                                <li><i class="fa fa-refresh reload-card"></i></li>
+                                                                <li><i class="fa fa-trash close-card"></i></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card-block">
+                                                        <div class="table-responsive">
+                                                            <table class="table table-hover m-b-0 without-header">
+                                                                <tbody>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="d-inline-block align-middle">
+                                                                                <img src="assets/images/avatar-4.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
+                                                                                <div class="d-inline-block">
+                                                                                    <h6>Shirley Hoe</h6>
+                                                                                    <p class="text-muted m-b-0">Sales executive , NY</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td class="text-right">
+                                                                            <h6 class="f-w-700">$78.001<i class="fas fa-level-down-alt text-c-red m-l-10"></i></h6>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="d-inline-block align-middle">
+                                                                                <img src="assets/images/avatar-2.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
+                                                                                <div class="d-inline-block">
+                                                                                    <h6>James Alexander</h6>
+                                                                                    <p class="text-muted m-b-0">Sales executive , EL</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td class="text-right">
+                                                                            <h6 class="f-w-700">$89.051<i class="fas fa-level-up-alt text-c-green m-l-10"></i></h6>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="d-inline-block align-middle">
+                                                                                <img src="assets/images/avatar-4.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
+                                                                                <div class="d-inline-block">
+                                                                                    <h6>Shirley Hoe</h6>
+                                                                                    <p class="text-muted m-b-0">Sales executive , NY</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td class="text-right">
+                                                                            <h6 class="f-w-700">$89.051<i class="fas fa-level-up-alt text-c-green m-l-10"></i></h6>
+                                                                        </td>
+                                                                    </tr>
+                                                                    <tr>
+                                                                        <td>
+                                                                            <div class="d-inline-block align-middle">
+                                                                                <img src="assets/images/avatar-2.jpg" alt="user image" class="img-radius img-40 align-top m-r-15">
+                                                                                <div class="d-inline-block">
+                                                                                    <h6>Nick Xander</h6>
+                                                                                    <p class="text-muted m-b-0">Sales executive , EL</p>
+                                                                                </div>
+                                                                            </div>
+                                                                        </td>
+                                                                        <td class="text-right">
+                                                                            <h6 class="f-w-700">$89.051<i class="fas fa-level-up-alt text-c-green m-l-10"></i></h6>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-6 col-md-12">
+                                                <div class="row">
+                                                    <!-- sale card start -->
+
+                                                    <div class="col-md-6">
+                                                        <div class="card text-center order-visitor-card">
+                                                            <div class="card-block">
+                                                                <h6 class="m-b-0">Total Subscription</h6>
+                                                                <h4 class="m-t-15 m-b-15"><i class="fa fa-arrow-down m-r-15 text-c-red"></i>7652</h4>
+                                                                <p class="m-b-0">48% From Last 24 Hours</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="card text-center order-visitor-card">
+                                                            <div class="card-block">
+                                                                <h6 class="m-b-0">Order Status</h6>
+                                                                <h4 class="m-t-15 m-b-15"><i class="fa fa-arrow-up m-r-15 text-c-green"></i>6325</h4>
+                                                                <p class="m-b-0">36% From Last 6 Months</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="card bg-c-red total-card">
+                                                            <div class="card-block">
+                                                                <div class="text-left">
+                                                                    <h4>489</h4>
+                                                                    <p class="m-0">Total Comment</p>
+                                                                </div>
+                                                                <span class="label bg-c-red value-badges">15%</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="card bg-c-green total-card">
+                                                            <div class="card-block">
+                                                                <div class="text-left">
+                                                                    <h4>$5782</h4>
+                                                                    <p class="m-0">Income Status</p>
+                                                                </div>
+                                                                <span class="label bg-c-green value-badges">20%</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="card text-center order-visitor-card">
+                                                            <div class="card-block">
+                                                                <h6 class="m-b-0">Unique Visitors</h6>
+                                                                <h4 class="m-t-15 m-b-15"><i class="fa fa-arrow-down m-r-15 text-c-red"></i>652</h4>
+                                                                <p class="m-b-0">36% From Last 6 Months</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-6">
+                                                        <div class="card text-center order-visitor-card">
+                                                            <div class="card-block">
+                                                                <h6 class="m-b-0">Monthly Earnings</h6>
+                                                                <h4 class="m-t-15 m-b-15"><i class="fa fa-arrow-up m-r-15 text-c-green"></i>5963</h4>
+                                                                <p class="m-b-0">36% From Last 6 Months</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- sale card end -->
+                                                </div>
+                                            </div>
+
+                                            <!--  sale analytics end -->
+
+                                            <!-- Project statustic start -->
+                                            <div class="col-xl-12">
+                                                <div class="card proj-progress-card">
+                                                    <div class="card-block">
+                                                        <div class="row">
+                                                            <div class="col-xl-3 col-md-6">
+                                                                <h6>Published Project</h6>
+                                                                <h5 class="m-b-30 f-w-700">532<span class="text-c-green m-l-10">+1.69%</span></h5>
+                                                                <div class="progress">
+                                                                    <div class="progress-bar bg-c-red" style="width:25%"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-3 col-md-6">
+                                                                <h6>Completed Task</h6>
+                                                                <h5 class="m-b-30 f-w-700">4,569<span class="text-c-red m-l-10">-0.5%</span></h5>
+                                                                <div class="progress">
+                                                                    <div class="progress-bar bg-c-blue" style="width:65%"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-3 col-md-6">
+                                                                <h6>Successfull Task</h6>
+                                                                <h5 class="m-b-30 f-w-700">89%<span class="text-c-green m-l-10">+0.99%</span></h5>
+                                                                <div class="progress">
+                                                                    <div class="progress-bar bg-c-green" style="width:85%"></div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-xl-3 col-md-6">
+                                                                <h6>Ongoing Project</h6>
+                                                                <h5 class="m-b-30 f-w-700">365<span class="text-c-green m-l-10">+0.35%</span></h5>
+                                                                <div class="progress">
+                                                                    <div class="progress-bar bg-c-yellow" style="width:45%"></div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- Project statustic end -->
+                                        </div>
+                                    </div>
+                                    <!-- Page-body end -->
+                                </div>
+                                <div id="styleSelector"> </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="item">
-                        <img src="public/images/slider-02.png" alt="">
-                    </div>
-                    <div class="item">
-                        <img src="public/images/slider-03.png" alt="">
-                    </div> -->
                 </div>
-            </div>
-            <div class="section" id="support-wp">
-                <div class="section-detail">
-                    <ul class="list-item clearfix">
-                        <li>
-                            <div class="thumb">
-                                <img src="public/images/icon-1.png">
-                            </div>
-                            <h3 class="title">Miễn phí vận chuyển</h3>
-                            <p class="desc">Tới tận tay khách hàng</p>
-                        </li>
-                        <li>
-                            <div class="thumb">
-                                <img src="public/images/icon-2.png">
-                            </div>
-                            <h3 class="title">Tư vấn 24/7</h3>
-                            <p class="desc">1900.9999</p>
-                        </li>
-                        <li>
-                            <div class="thumb">
-                                <img src="public/images/icon-3.png">
-                            </div>
-                            <h3 class="title">Tiết kiệm hơn</h3>
-                            <p class="desc">Với nhiều ưu đãi cực lớn</p>
-                        </li>
-                        <li>
-                            <div class="thumb">
-                                <img src="public/images/icon-4.png">
-                            </div>
-                            <h3 class="title">Thanh toán nhanh</h3>
-                            <p class="desc">Hỗ trợ nhiều hình thức</p>
-                        </li>
-                        <li>
-                            <div class="thumb">
-                                <img src="public/images/icon-5.png">
-                            </div>
-                            <h3 class="title">Đặt hàng online</h3>
-                            <p class="desc">Thao tác đơn giản</p>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="section" id="feature-product-wp">
-                <div class="section-head">
-                    <h3 class="section-title">Sản phẩm nổi bật</h3>
-                </div>
-                <div class="section-detail">
-                    <ul class="list-item">
-                        <?php 
-                            foreach ($list_pro_hight as $item) {
-                                # code...
-                                ?>
-                                <li>
-                            <a href="?mod=page&act=detail&id=<?php echo $item['id'] ?>" title="" class="thumb">
-                                <img src="<?php echo $item['image_link'] ?>">
-                            </a>
-                            <a href="?mod=page&act=detail&id=<?php echo $item['id'] ?>" title="" class="product-name"><?php echo $item['name'] ?></a>
-                            <div class="price">
-                                <span class="new"><?php echo currentcy_format($item['price'])  ?></span>
-                                <span class="old"><?php echo currentcy_format($item['old_price'])  ?></span>
-                            </div>
-                            <div class="action clearfix">
-                                <a href="?mod=cart&act=add&id=<?php echo $item['id'] ?>" title="" class="add-cart fl-left">Thêm giỏ hàng</a>
-                                <a href="?mod=cart&act=buynow&id=<?php echo $item['id'] ?>" title="" class="buy-now fl-right">Mua ngay</a>
-                            </div>
-                        </li>
-                                <?php
-                                
-                            }
-                        ?>
-                        <!-- <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-pro-05.png">
-                            </a>
-                            <a href="?page=detail_product" title="" class="product-name">Laptop Lenovo IdeaPad 120S</a>
-                            <div class="price">
-                                <span class="new">5.190.000đ</span>
-                                <span class="old">6.190.000đ</span>
-                            </div>
-                            <div class="action clearfix">
-                                <a href="?page=cart" title="" class="add-cart fl-left">Thêm giỏ hàng</a>
-                                <a href="?page=checkout" title="" class="buy-now fl-right">Mua ngay</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-pro-08.png">
-                            </a>
-                            <a href="?page=detail_product" title="" class="product-name">Samsung Galaxy S8 Plus</a>
-                            <div class="price">
-                                <span class="new">20.490.000đ</span>
-                                <span class="old">22.900.000đ</span>
-                            </div>
-                            <div class="action clearfix">
-                                <a href="?page=cart" title="Thêm giỏ hàng" class="add-cart fl-left">Thêm giỏ hàng</a>
-                                <a href="?page=checkout" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-pro-07.png">
-                            </a>
-                            <a href="?page=detail_product" title="" class="product-name">Laptop Acer Aspire ES1</a>
-                            <div class="price">
-                                <span class="new">6.390.000đ</span>
-                                <span class="old">7.390.000đ</span>
-                            </div>
-                            <div class="action clearfix">
-                                <a href="?page=cart" title="Thêm giỏ hàng" class="add-cart fl-left">Thêm giỏ hàng</a>
-                                <a href="?page=checkout" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-pro-10.png">
-                            </a>
-                            <a href="?page=detail_product" title="" class="product-name">Sony Xperia XZ Premium</a>
-                            <div class="price">
-                                <span class="new">17.990.000</span>
-                                <span class="old">20.990.000đ</span>
-                            </div>
-                            <div class="action clearfix">
-                                <a href="?page=cart" title="Thêm giỏ hàng" class="add-cart fl-left">Thêm giỏ hàng</a>
-                                <a href="?page=checkout" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-pro-06.png">
-                            </a>
-                            <a href="?page=detail_product" title="" class="product-name">Laptop Asus E402NA</a>
-                            <div class="price">
-                                <span class="new">5.990.000đ</span>
-                                <span class="old">6.990.000đ</span>
-                            </div>
-                            <div class="action clearfix">
-                                <a href="?page=cart" title="Thêm giỏ hàng" class="add-cart fl-left">Thêm giỏ hàng</a>
-                                <a href="?page=checkout" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-pro-09.png">
-                            </a>
-                            <a href="?page=detail_product" title="" class="product-name">IPhone 7 128GB</a>
-                            <div class="price">
-                                <span class="new">18.990.000đ</span>
-                                <span class="old">20.900.000đ</span>
-                            </div>
-                            <div class="action clearfix">
-                                <a href="?page=cart" title="Thêm giỏ hàng" class="add-cart fl-left">Thêm giỏ hàng</a>
-                                <a href="?page=checkout" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
-                            </div>
-                        </li> -->
-                    </ul>
-                </div>
-            </div>
-            
-                
-                    <?php 
-                        foreach ($list_cat as $item) {
-                            # code...
-                            ?>
-                            <div class="section" id="list-product-wp">
-                            <div class="section-head">
-                            <h3 class="section-title"><?php echo $item['cat_name'] ?></h3>
-                         </div>
-                            <div class="section-detail">
-                                <ul class="list-item clearfix">
-                                    <?php
-                                    $procduct_temp=get_list_product_by_id_list_cat($item['id']);
-                                    foreach ($procduct_temp as $item_temp) {
-                                        # code...
-                                        ?>
-                                        <li>
-                            <a href="?mod=page&act=detail&id=<?php echo $item_temp['id'] ?>" title="" class="thumb">
-                                <img src="<?php echo $item_temp['image_link'] ?>">
-                            </a>
-                            <a href="?mod=page&act=detail&id=<?php echo $item_temp['id'] ?>" title="" class="product-name"><?php echo $item_temp['name'] ?></a>
-                            <div class="price">
-                                <span class="new"><?php  echo currentcy_format($item_temp['price']) ?></span>
-                                <span class="old"><?php  echo currentcy_format($item_temp['old_price']) ?></span>
-                            </div>
-                            <div class="action clearfix">
-                                <a href="?mod=cart&act=add&id=<?php echo $item_temp['id'] ?>" title="Thêm giỏ hàng" class="add-cart fl-left">Thêm giỏ hàng</a>
-                                <a href="?mod=cart&act=buynow&id=<?php echo $item_temp['id'] ?>" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
-                            </div>
-                            
-                        </li>
-                        <?php
-                                    }
-                                    ?>
-                                </ul>
-                            </div>
-                            </div>
-                            <?php
-                        }
-                    ?>
-                    <!-- <div class="section-head">
-                    <h3 class="section-title">Điện thoại</h3>
-                </div>
-                <div class="section-detail">
-                    <ul class="list-item clearfix">
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-pro-16.png">
-                            </a>
-                            <a href="?page=detail_product" title="" class="product-name">Motorola Moto G5S Plus</a>
-                            <div class="price">
-                                <span class="new">6.990.000đđ</span>
-                                <span class="old">8.990.000đđ</span>
-                            </div>
-                            <div class="action clearfix">
-                                <a href="?page=cart" title="Thêm giỏ hàng" class="add-cart fl-left">Thêm giỏ hàng</a>
-                                <a href="?page=checkout" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-pro-15.png">
-                            </a>
-                            <a href="?page=detail_product" title="" class="product-name">Samsung Galaxy A5</a>
-                            <div class="price">
-                                <span class="new">7.990.000đ</span>
-                                <span class="old">9.990.000đ</span>
-                            </div>
-                            <div class="action clearfix">
-                                <a href="?page=cart" title="Thêm giỏ hàng" class="add-cart fl-left">Thêm giỏ hàng</a>
-                                <a href="?page=checkout" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-pro-14.png">
-                            </a>
-                            <a href="?page=detail_product" title="" class="product-name">Sony Xperia XA Ultra</a>
-                            <div class="price">
-                                <span class="new">6.990.000đ</span>
-                                <span class="old">7.990.000đ</span>
-                            </div>
-                            <div class="action clearfix">
-                                <a href="?page=cart" title="Thêm giỏ hàng" class="add-cart fl-left">Thêm giỏ hàng</a>
-                                <a href="?page=checkout" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-pro-13.png">
-                            </a>
-                            <a href="?page=detail_product" title="" class="product-name">Huawei Nova 2i</a>
-                            <div class="price">
-                                <span class="new">5.990.000đ</span>
-                                <span class="old">8.990.000đ</span>
-                            </div>
-                            <div class="action clearfix">
-                                <a href="?page=cart" title="Thêm giỏ hàng" class="add-cart fl-left">Thêm giỏ hàng</a>
-                                <a href="?page=checkout" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-pro-12.png">
-                            </a>
-                            <a href="?page=detail_product" title="" class="product-name">Xiaomi Mi A1</a>
-                            <div class="price">
-                                <span class="new">5.990.000đ</span>
-                                <span class="old">6.990.000đ</span>
-                            </div>
-                            <div class="action clearfix">
-                                <a href="?page=cart" title="Thêm giỏ hàng" class="add-cart fl-left">Thêm giỏ hàng</a>
-                                <a href="?page=checkout" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-pro-11.png">
-                            </a>
-                            <a href="?page=detail_product" title="" class="product-name">HTC U Ultra Sapphire</a>
-                            <div class="price">
-                                <span class="new">16.490.000đ</span>
-                                <span class="old">18.490.000đ</span>
-                            </div>
-                            <div class="action clearfix">
-                                <a href="?page=cart" title="Thêm giỏ hàng" class="add-cart fl-left">Thêm giỏ hàng</a>
-                                <a href="?page=checkout" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-pro-08.png">
-                            </a>
-                            <a href="?page=detail_product" title="" class="product-name">Sony Xperia XZ Dual</a>
-                            <div class="price">
-                                <span class="new">9.990.000đ</span>
-                                <span class="old">10.990.000đ</span>
-                            </div>
-                            <div class="action clearfix">
-                                <a href="?page=cart" title="Thêm giỏ hàng" class="add-cart fl-left">Thêm giỏ hàng</a>
-                                <a href="?page=checkout" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="?page=detail_product" title="" class="thumb">
-                                <img src="public/images/img-pro-10.png">
-                            </a>
-                            <a href="?page=detail_product" title="" class="product-name">Bphone 2017</a>
-                            <div class="price">
-                                <span class="new">9.790.000đ</span>
-                                <span class="old">10.790.000đ</span>
-                            </div>
-                            <div class="action clearfix">
-                                <a href="?page=cart" title="Thêm giỏ hàng" class="add-cart fl-left">Thêm giỏ hàng</a>
-                                <a href="?page=checkout" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div> -->
-            
-            <!-- <div class="section" id="list-product-wp">
-                <div class="section-head">
-                    <h3 class="section-title">Laptop</h3>
-                </div>
-                <div class="section-detail">
-                    <ul class="list-item clearfix">
-                        <li>
-                            <a href="" title="" class="thumb">
-                                <img src="public/images/img-pro-17.png">
-                            </a>
-                            <a href="" title="" class="product-name">Laptop Asus X441NA</a>
-                            <div class="price">
-                                <span class="new">7.690.000đ</span>
-                                <span class="old">8.690.000đ</span>
-                            </div>
-                            <div class="action clearfix">
-                                <a href="?page=cart" title="Thêm giỏ hàng" class="add-cart fl-left">Thêm giỏ hàng</a>
-                                <a href="?page=checkout" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="" title="" class="thumb">
-                                <img src="public/images/img-pro-18.png">
-                            </a>
-                            <a href="" title="" class="product-name">Laptop Lenovo IdeaPad 110</a>
-                            <div class="price">
-                                <span class="new">9.490.000đ</span>
-                                <span class="old">10.490.000đ</span>
-                            </div>
-                            <div class="action clearfix">
-                                <a href="?page=cart" title="Thêm giỏ hàng" class="add-cart fl-left">Thêm giỏ hàng</a>
-                                <a href="?page=checkout" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="" title="" class="thumb">
-                                <img src="public/images/img-pro-19.png">
-                            </a>
-                            <a href="" title="" class="product-name">Laptop Acer ES1 533</a>
-                            <div class="price">
-                                <span class="new">7.490.000đ</span>
-                                <span class="old">9.490.000đ</span>
-                            </div>
-                            <div class="action clearfix">
-                                <a href="?page=cart" title="Thêm giỏ hàng" class="add-cart fl-left">Thêm giỏ hàng</a>
-                                <a href="?page=checkout" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="" title="" class="thumb">
-                                <img src="public/images/img-pro-20.png">
-                            </a>
-                            <a href="" title="" class="product-name">Laptop Lenovo IdeaPad 110</a>
-                            <div class="price">
-                                <span class="new">6.990.000đ</span>
-                                <span class="old">7.990.000đ</span>
-                            </div>
-                            <div class="action clearfix">
-                                <a href="?page=cart" title="Thêm giỏ hàng" class="add-cart fl-left">Thêm giỏ hàng</a>
-                                <a href="?page=checkout" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="" title="" class="thumb">
-                                <img src="public/images/img-pro-21.png">
-                            </a>
-                            <a href="" title="" class="product-name">Laptop Asus X441NA</a>
-                            <div class="price">
-                                <span class="new">6.490.000đ</span>
-                                <span class="old">8.490.000đ</span>
-                            </div>
-                            <div class="action clearfix">
-                                <a href="?page=cart" title="Thêm giỏ hàng" class="add-cart fl-left">Thêm giỏ hàng</a>
-                                <a href="?page=checkout" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="" title="" class="thumb">
-                                <img src="public/images/img-pro-22.png">
-                            </a>
-                            <a href="" title="" class="product-name">Laptop Acer Aspire ES1</a>
-                            <div class="price">
-                                <span class="new">6.390.000đ</span>
-                                <span class="old">7.390.000đ</span>
-                            </div>
-                            <div class="action clearfix">
-                                <a href="?page=cart" title="Thêm giỏ hàng" class="add-cart fl-left">Thêm giỏ hàng</a>
-                                <a href="?page=checkout" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="" title="" class="thumb">
-                                <img src="public/images/img-pro-05.png">
-                            </a>
-                            <a href="" title="" class="product-name">Laptop Lenovo IdeaPad 120S</a>
-                            <div class="price">
-                                <span class="new">5.190.000đ</span>
-                                <span class="old">7.190.000đ</span>
-                            </div>
-                            <div class="action clearfix">
-                                <a href="?page=cart" title="Thêm giỏ hàng" class="add-cart fl-left">Thêm giỏ hàng</a>
-                                <a href="?page=checkout" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
-                            </div>
-                        </li>
-                        <li>
-                            <a href="" title="" class="thumb">
-                                <img src="public/images/img-pro-23.png">
-                            </a>
-                            <a href="" title="" class="product-name">Laptop Asus A540UP I5</a>
-                            <div class="price">
-                                <span class="new">14.490.000đ</span>
-                                <span class="old">16.490.000đ</span>
-                            </div>
-                            <div class="action clearfix">
-                                <a href="?page=cart" title="Thêm giỏ hàng" class="add-cart fl-left">Thêm giỏ hàng</a>
-                                <a href="?page=checkout" title="Mua ngay" class="buy-now fl-right">Mua ngay</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div> -->
-        </div>
-        <div class="sidebar fl-left">
-            <div class="section" id="category-product-wp">
-                <div class="section-head">
-                    <h3 class="section-title">Danh mục sản phẩm</h3>
-                </div>
-                <div class="secion-detail">
-                    <ul class="list-item">
-                     <?php
-                    
-                         foreach ($list_cat as $item) {
-                             $cat_id=$item['id'];
-                             $cat_tt=$cat_id-1;
-                    # code...
-                    ?>
-                    <li>
-                    <a href="?mod=page&act=index&id=<?php echo $item['id'] ?>" title=""><?php echo $item['cat_name'] ?></a>
-                          <?php
-                          $cata_temp=get_list_catalog_by_id_list_cart($item['id']);
-                          if(!empty($cata_temp))
-                          {
-                              ?>
-                              <ul class="sub-menu">
-                                <?php
-                                foreach ($cata_temp as $item_temp_1) {
-                                  
-                                    # code...
-                                    ?>
-                                    <li>
-                                    <a href="#" title=""><?php echo $item_temp_1['catalog_name']?></a>
-                                    <?php
-                                    $pro_temp=get_list_product_by_id_catalog($item_temp_1['id']);
-                                        if(!empty($pro_temp))
-                                        {
-                                            ?>
-                                            <ul class="sub-menu">
-                                            <?php
-                                                foreach ($pro_temp as $item_temp_2) {
-                                                    # code...
-                                                    ?>
-                                                        <li>
-                                                        <a href="?mod=page&act=detail&cat_id=<?php echo $item_temp_1['id'] ?>&id=<?php echo $item_temp_2['id'] ?>" title=""><?php echo $item_temp_2['name'] ?></a>
-                                                         </li>
-                                                    <?php
-                                                }
-                                            ?>
-                                            </ul>
-                                            <?php
-                                        }
-                                    ?>
-
-                                    </li>
-                                    <?php
-                                }
-                                ?>
-
-                                </ul>
-                              <?php
-                            
-                          }
-                          ?>
-                    </li>
-                    
-                    <?php 
-                    }
-                 ?> 
-                        <!-- <li>
-                            <a href="?page=category_product" title="">Điện thoại</a>
-                            <ul class="sub-menu">
-                                <li>
-                                    <a href="?page=category_product" title="">Iphone</a>
-                                </li>
-                                <li>
-                                    <a href="?page=category_product" title="">Samsung</a>
-                                    <ul class="sub-menu">
-                                        <li>
-                                            <a href="?page=category_product" title="">Iphone X</a>
-                                        </li>
-                                        <li>
-                                            <a href="?page=category_product" title="">Iphone 8</a>
-                                        </li>
-                                        <li>
-                                            <a href="?page=category_product" title="">Iphone 8 Plus</a>
-                                        </li>
-                                    </ul>
-                                </li>
-                                <li>
-                                    <a href="?page=category_product" title="">Oppo</a>
-                                </li>
-                                <li>
-                                    <a href="?page=category_product" title="">Bphone</a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="?page=category_product" title="">Máy tính bảng</a>
-                        </li>
-                        <li>
-                            <a href="?page=category_product" title="">Laptop</a>
-                        </li>
-                        <li>
-                            <a href="?page=category_product" title="">Tai nghe</a>
-                        </li>
-                        <li>
-                            <a href="?page=category_product" title="">Thời trang</a>
-                        </li>
-                        <li>
-                            <a href="?page=category_product" title="">Đồ gia dụng</a>
-                        </li>
-                        <li>
-                            <a href="?page=category_product" title="">Thiết bị văn phòng</a>
-                        </li> -->
-                    </ul>
-                </div>
-            </div>
-            <div class="section" id="selling-wp">
-                <div class="section-head">
-                    <h3 class="section-title">Sản phẩm bán chạy</h3>
-                </div>
-                <div class="section-detail">
-                    <ul class="list-item">
-                        <?php
-                            foreach ($list_pro_sold as $item) {
-                                # code...
-                                ?>
-
-                                <li class="clearfix">
-                            <a href="?mod=page&act=detail&cat_id=<?php echo $item['cat_id'] ?>&id=<?php echo $item['id'] ?>" title="" class="thumb fl-left">
-                                <img src="<?php echo $item['image_link'] ?>" alt="">
-                            </a>
-                            <div class="info fl-right">
-                                <a href="?mod=page&act=detail&cat_id=<?php echo $item['cat_id'] ?>&id=<?php echo $item['id'] ?>" title="" class="product-name"><?php echo $item['name'] ?></a>
-                                <div class="price">
-                                    <span class="new"><?php echo currentcy_format($item['price']) ?></span>
-                                    <span class="old"><?php echo currentcy_format($item['old_price'])?></span>
-                                </div>
-                                <a href="?mod=cart&act=buynow&id=<?php echo $item['id'] ?>" title="" class="buy-now">Mua ngay</a>
-                            </div>
-                        </li>
-                        <?php
-                            }
-                        ?>
-                        <!-- <li class="clearfix">
-                            <a href="?page=detail_product" title="" class="thumb fl-left">
-                                <img src="public/images/img-pro-13.png" alt="">
-                            </a>
-                            <div class="info fl-right">
-                                <a href="?page=detail_product" title="" class="product-name">Laptop Asus A540UP I5</a>
-                                <div class="price">
-                                    <span class="new">5.190.000đ</span>
-                                    <span class="old">7.190.000đ</span>
-                                </div>
-                                <a href="" title="" class="buy-now">Mua ngay</a>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <a href="?page=detail_product" title="" class="thumb fl-left">
-                                <img src="public/images/img-pro-11.png" alt="">
-                            </a>
-                            <div class="info fl-right">
-                                <a href="?page=detail_product" title="" class="product-name">Iphone X Plus</a>
-                                <div class="price">
-                                    <span class="new">15.190.000đ</span>
-                                    <span class="old">17.190.000đ</span>
-                                </div>
-                                <a href="" title="" class="buy-now">Mua ngay</a>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <a href="?page=detail_product" title="" class="thumb fl-left">
-                                <img src="public/images/img-pro-12.png" alt="">
-                            </a>
-                            <div class="info fl-right">
-                                <a href="?page=detail_product" title="" class="product-name">Iphone X Plus</a>
-                                <div class="price">
-                                    <span class="new">15.190.000đ</span>
-                                    <span class="old">17.190.000đ</span>
-                                </div>
-                                <a href="" title="" class="buy-now">Mua ngay</a>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <a href="?page=detail_product" title="" class="thumb fl-left">
-                                <img src="public/images/img-pro-05.png" alt="">
-                            </a>
-                            <div class="info fl-right">
-                                <a href="?page=detail_product" title="" class="product-name">Iphone X Plus</a>
-                                <div class="price">
-                                    <span class="new">15.190.000đ</span>
-                                    <span class="old">17.190.000đ</span>
-                                </div>
-                                <a href="" title="" class="buy-now">Mua ngay</a>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <a href="?page=detail_product" title="" class="thumb fl-left">
-                                <img src="public/images/img-pro-22.png" alt="">
-                            </a>
-                            <div class="info fl-right">
-                                <a href="?page=detail_product" title="" class="product-name">Iphone X Plus</a>
-                                <div class="price">
-                                    <span class="new">15.190.000đ</span>
-                                    <span class="old">17.190.000đ</span>
-                                </div>
-                                <a href="" title="" class="buy-now">Mua ngay</a>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <a href="?page=detail_product" title="" class="thumb fl-left">
-                                <img src="public/images/img-pro-23.png" alt="">
-                            </a>
-                            <div class="info fl-right">
-                                <a href="?page=detail_product" title="" class="product-name">Iphone X Plus</a>
-                                <div class="price">
-                                    <span class="new">15.190.000đ</span>
-                                    <span class="old">17.190.000đ</span>
-                                </div>
-                                <a href="" title="" class="buy-now">Mua ngay</a>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <a href="?page=detail_product" title="" class="thumb fl-left">
-                                <img src="public/images/img-pro-18.png" alt="">
-                            </a>
-                            <div class="info fl-right">
-                                <a href="?page=detail_product" title="" class="product-name">Iphone X Plus</a>
-                                <div class="price">
-                                    <span class="new">15.190.000đ</span>
-                                    <span class="old">17.190.000đ</span>
-                                </div>
-                                <a href="" title="" class="buy-now">Mua ngay</a>
-                            </div>
-                        </li>
-                        <li class="clearfix">
-                            <a href="?page=detail_product" title="" class="thumb fl-left">
-                                <img src="public/images/img-pro-15.png" alt="">
-                            </a>
-                            <div class="info fl-right">
-                                <a href="?page=detail_product" title="" class="product-name">Iphone X Plus</a>
-                                <div class="price">
-                                    <span class="new">15.190.000đ</span>
-                                    <span class="old">17.190.000đ</span>
-                                </div>
-                                <a href="" title="" class="buy-now">Mua ngay</a>
-                            </div>
-                        </li> -->
-                    </ul>
-                </div>
-            </div>
-            <div class="section" id="banner-wp">
-                <?php 
-                foreach ($adv as $item) {
-                    # code...
-                    ?>
-                    <div class="section-detail">
-                    <a href="" title="" class="thumb">
-                        <img src="<?php  echo $item['image_link'] ?>" alt="">
-                    </a>
-                </div>
-                    <?php
-                }
-                ?>
-                
             </div>
         </div>
     </div>
-</div>
 
 
 <?php   get_footer(); ?>
