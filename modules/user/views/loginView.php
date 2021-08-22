@@ -118,7 +118,7 @@
                                         </div>
                                     </div>
                                     <div class="form-group form-primary">
-                                        <input type="email" name="email" value ="<?php  echo set_value("email")?>"  class="form-control">
+                                        <input type="email" name="email" value =""  class="form-control">
                                         <span class="form-bar"></span>
                                         <label class="float-label">Địa chỉ email của bạn</label>
                                         <?php echo form_error("email")?>
