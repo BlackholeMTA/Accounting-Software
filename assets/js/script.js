@@ -1,5 +1,19 @@
 "use strict";
 $(document).ready(function() {
+    $("ul.pcoded-left-item li" ).on('click', function() {
+        if(!$(this).hasClass('active'))
+        {
+            $('ul.pcoded-left-item li').removeClass('active');
+            $(this).addClass('active');
+        }
+    });
+    $("ul.pcoded-submenu li" ).on('click', function() {
+        if(!$(this).hasClass('active'))
+        {
+            $('ul.pcoded-submenu li').removeClass('active');
+            $(this).addClass('active');
+        }
+    });
     // card js start
     $(".card-header-right .close-card").on('click', function() {
         var $this = $(this);
@@ -228,4 +242,4 @@ function toggleFullScreen() {
     }
 }
 
-$("body").append('<div class="fixed-button active"><a href="https://codedthemes.com/item/flash-able-bootstrap-admin-template/" target="_blank" class="btn btn-md btn-primary"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Upgrade To Pro</a> </div>');var $window=$(window),nav=$(".fixed-button");
+// $("body").append('<div class="fixed-button active"><a href="https://codedthemes.com/item/flash-able-bootstrap-admin-template/" target="_blank" class="btn btn-md btn-primary"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Upgrade To Pro</a> </div>');var $window=$(window),nav=$(".fixed-button");

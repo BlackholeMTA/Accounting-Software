@@ -19,7 +19,11 @@ $db = array(
     'hostname' => 'localhost:3307',
     'username' => 'root',
     'password' => '1',
-    'database' => 'account',
+    'database' => 'd_account',
+    // 'hostname' => 'blackholemta.space',
+    // 'username' => 'blackhol_accounting',
+    // 'password' => 'g435R_dWr4j4V_D',
+    // 'database' => 'blackhol_account',
 );
 
 

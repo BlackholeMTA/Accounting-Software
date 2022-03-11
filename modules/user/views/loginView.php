@@ -133,8 +133,8 @@
                                     <div class="row m-t-25 text-left">
                                         <div class="col-12">
                                             <div class="checkbox-fade fade-in-primary d-">
-                                                <label>
-                                                    <input type="checkbox" value="">
+                                                <label for="remember_me">
+                                                    <input name ="remember_me" id="remember_me" type="checkbox" value="1">
                                                     <span class="cr"><i class="cr-icon icofont icofont-ui-check txt-primary"></i></span>
                                                     <span class="text-inverse">Nhớ mật khẩu</span>
                                                 </label>
@@ -153,7 +153,7 @@
                                     <div class="row">
                                         <div class="col-md-10">
                                             <p class="text-inverse text-left m-b-0">Cảm ơn bạn.</p>
-                                            <p class="text-inverse text-left"><a href="index.html"><b>Trở về website</b></a></p>
+                                           
                                         </div>
                                         <div class="col-md-2">
                                             <img src="assets/images/auth/Logo-small-bottom.png" alt="small-logo.png">

@@ -12,7 +12,7 @@
     <!-- Meta -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimal-ui">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv=”Content-Type” content=”text/html;  />
 
     <meta name="keywords" content="bootstrap, bootstrap admin template, admin theme, admin dashboard, dashboard template, admin template, responsive" />
     <meta name="author" content="Codedthemes" />
@@ -35,11 +35,15 @@
     <link rel="stylesheet" type="text/css" href="assets/css/jquery.mCustomScrollbar.css">
     <!-- Style.css -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <!-- StyleOfMe.css -->
+    <link rel="stylesheet" type="text/css" href="assets/css/styleOfMe.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap-datepicker.css">
+    
 </head>
 
 <body>
     <!-- Pre-loader start -->
-    <div class="theme-loader">
+    <!-- <div class="theme-loader">
         <div class="loader-track">
             <div class="preloader-wrapper">
                 <div class="spinner-layer spinner-blue">
@@ -90,10 +94,10 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Pre-loader end -->
     <div id="pcoded" class="pcoded">
-        <div class="pcoded-overlay-box"></div>
+        <!-- <div class="pcoded-overlay-box"></div> -->
         <div class="pcoded-container navbar-wrapper">
             <nav class="navbar header-navbar pcoded-header">
                 <div class="navbar-wrapper">
@@ -112,7 +116,7 @@
                                 </div>
                             </div>
                         </div>
-                        <a href="index.html">
+                        <a href="?mod=home">
                             <img class="img-fluid" src="assets/images/logo.png" alt="Theme-Logo" />
                         </a>
                         <a class="mobile-options waves-effect waves-light">
@@ -130,7 +134,9 @@
                                 </a>
                             </li>
                         </ul>
+                        
                         <ul class="nav-right">
+                            <li style ="font-size:18px; color:#fff"><?php echo sw_get_current_weekday() ?></li>
                             <li class="header-notification">
                                 <a href="#!" class="waves-effect waves-light">
                                     <i class="ti-bell"></i>
@@ -176,33 +182,34 @@
                             <li class="user-profile header-notification">
                                 <a href="#!" class="waves-effect waves-light">
                                     <img src="assets/images/avatar-4.jpg" class="img-radius" alt="User-Profile-Image">
-                                    <span>John Doe</span>
+                                    <span><?php $info = get_info_user(); echo($info["user_email"] ); ?></span>
                                     <i class="ti-angle-down"></i>
                                 </a>
                                 <ul class="show-notification profile-notification">
-                                    <li class="waves-effect waves-light">
+                                    <!-- <li class="waves-effect waves-light">
                                         <a href="#!">
                                             <i class="ti-settings"></i> Settings
                                         </a>
-                                    </li>
+                                    </li> -->
                                     <li class="waves-effect waves-light">
-                                        <a href="user-profile.html">
-                                            <i class="ti-user"></i> Profile
+                                        <a href="?mod=user&action=infoUser">
+                                            <i class="ti-user"></i> Hồ sơ cá nhân
                                         </a>
                                     </li>
-                                    <li class="waves-effect waves-light">
-                                        <a href="email-inbox.html">
-                                            <i class="ti-email"></i> My Messages
+                                     <li class="waves-effect waves-light">
+                                        <a href="?mod=user&action=changePassword">
+                                        <i class="fa fa-unlock-alt" aria-hidden="true"></i> Đổi mật khẩu
                                         </a>
                                     </li>
+                                    <!--
                                     <li class="waves-effect waves-light">
                                         <a href="auth-lock-screen.html">
                                             <i class="ti-lock"></i> Lock Screen
                                         </a>
-                                    </li>
+                                    </li> -->
                                     <li class="waves-effect waves-light">
-                                        <a href="auth-normal-sign-in.html">
-                                            <i class="ti-layout-sidebar-left"></i> Logout
+                                        <a href="?mod=user&action=logout">
+                                            <i class="ti-layout-sidebar-left"></i> Đăng xuất
                                         </a>
                                     </li>
                                 </ul>

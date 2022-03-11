@@ -2,13 +2,16 @@
 
 // Hàm kết nối dữ liệu
 function db_connect() {
+    header("Content-type: text/html; charset=utf-8");
     global $conn;
     $db = func_get_arg(0);
     $conn = mysqli_connect($db['hostname'], $db['username'], $db['password'], $db['database']);
+    mysqli_set_charset($conn, 'UTF8');
     if (!$conn) {
         die("Kết nối không thành công ".mysqli_connect_error());
     }
-    // mysqli_set_charset($conn, "utf8");   Phần này cần lưu ý
+    // Phần này cần lưu ý để set tiêng việt
+    // mysqli_set_charset($conn, "utf8");   
     
 }
 

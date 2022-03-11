@@ -16,11 +16,12 @@ date_default_timezone_set("Asia/Ho_Chi_Minh"); // thêm thời gian
  */
 
 $config['base_url'] = "http://localhost/003_Co_Hien/ke_toan/Accounting-Software";
-
+//  $config['base_url'] = "https://blackholemta.space";
 
 $config['default_module'] = 'home';
 $config['default_controller'] = 'index';
 $config['default_action'] = 'index';
+
 
 
 

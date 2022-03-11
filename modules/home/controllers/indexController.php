@@ -6,6 +6,8 @@ function construct()
 }
 function indexAction()
 {
+    $data['data_vnd'] = get_all_data_collect_spent_vnd_on_months_in_year();
+    $data['data_usd'] = get_all_data_collect_spent_usd_on_months_in_year();
     // $list_cat=get_list('tbl_list_cats');
     // $list_catalog=get_list('tbl_catalogs');
     // $list_product=get_list('tbl_products');
@@ -32,7 +34,7 @@ function indexAction()
     // $data['adv']=$adv;
     // $data['list_pro_sold']=$list_pro_sold;
     // $data['list_pro_hight']=$list_pro_hight;
-    load_view('index');
+    load_view('index',$data);
 
 }
 ?>

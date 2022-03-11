@@ -76,45 +76,38 @@ function donutChart() {
 Morris.Bar({
     element: 'morris-bar-chart',
     data: [{
-        y: '2006',
+        y: 'Tháng 1',
         a: 100,
         b: 90,
-        c: 60
     }, {
-        y: '2007',
+        y: 'Tháng 2',
         a: 75,
         b: 65,
-        c: 40
     }, {
-        y: '2008',
+        y: 'Tháng 3',
         a: 50,
         b: 40,
-        c: 30
     }, {
-        y: '2009',
+        y: 'Tháng 4',
         a: 75,
         b: 65,
-        c: 40
     }, {
-        y: '2010',
+        y: 'Tháng 5',
         a: 50,
         b: 40,
-        c: 30
     }, {
-        y: '2011',
+        y: 'Tháng 6',
         a: 75,
         b: 65,
-        c: 40
     }, {
-        y: '2012',
+        y: 'Tháng 7',
         a: 100,
         b: 90,
-        c: 40
     }],
     xkey: 'y',
-    ykeys: ['a', 'b', 'c'],
-    labels: ['A', 'B', 'C'],
-    barColors: ['#5FBEAA', '#5D9CEC', '#cCcCcC'],
+    ykeys: ['a', 'b' ],
+    labels: ['Thu', 'Chi' ],
+    barColors: ['#5FBEAA', '#5D9CEC'],
     hideHover: 'auto',
     gridLineColor: '#eef0f2',
     resize: true
